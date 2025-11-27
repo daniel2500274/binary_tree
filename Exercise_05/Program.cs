@@ -18,18 +18,15 @@ class Program
 
         bodega.DibujarMapaBodega();
 
-        // Indicar recorrido Inorden
-        // Muestra la lista ordenada visualmente
+        // Indicar recorrido Inorden 
         bodega.GenerarReporteExcel();
 
         // Localizar producto 620 y actualizar existencia a "0"
         bodega.ActualizarStock(620, 0);
 
-        // Descontinuar producto 375
-        // El código 375 es hijo derecho de 250 y es una HOJA (no tiene hijos).
+        // Descontinuar producto 375 
         bodega.DescontinuarProducto(375);
-        bodega.DibujarMapaBodega(); // Para verificar visualmente la eliminación
-
+        bodega.DibujarMapaBodega();    
         // Listado completo ordenado ascendente (Explicación abajo)
         bodega.GenerarReporteExcel();
     }
